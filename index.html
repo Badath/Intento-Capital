@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <!-- Define la codificación de caracteres -->
+        <meta charset="UTF-8">
+        <!-- Ajusta el contenido para móviles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Establece compatibilidad -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Título de la página -->
+        <title>MazzVulth</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Encabezado principal-->
+        <header>
+            <h1>El Escondite de MazzVulth</h1>
+            <p>Este es un proyecto personal de una página web en HTML.</p>
+        </header>
+
+        <!-- Panel de navegación -->
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#acerca">Acerca de</a>
+        </nav>
+
+        <!-- Definimos un contenedor para el cuerpo -->
+        <div class="container">
+            <!-- Primera columna -->
+            <div class="column column-1">
+
+                <!-- Sección de inicio-->
+                <section id="inicio">
+                    <h2>Inicio</h2>
+                    <p>Este es el lobby de mi proyecto. Aquí encontrarás el acceso a diferentes sesiones.</p>
+                </section>
+
+                <!-- Sección de curiosidades-->
+                <section id="curiosidades">
+                    <h2>Curiosidades</h2>
+                    <p>Proyecto de una novela interactiva sobre el Capitalismo (Origen, características) </p><a href="lobby.html"> Aquí </a>
+                </section>
+
+            </div>
+
+            <!-- Segunda columna -->
+            <div class="column column-2">
+
+                <!-- Sección de contacto-->
+                <section id="contacto">
+                    <h2>Contacto</h2>
+                    <p>Puedes contactarnos al siguiente <a href="#" onclick="copiarAlPortapapeles(); return false;">correo</a></p>
+                </section>
+
+                <!-- Sección "Acerca de" -->
+                <section id="acerca">
+                    <h2>Acerca de</h2>
+                    <p>Soy un estudiante autodidacta que le apasiona los temas referentes a la informática, me gusta programar para eso he aprendido lenguajes como: C#, Python, JavaScript. </p>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Pie de página que incluye los derechos de autor -->
+        <footer>
+            <p>© 2024 Mi Página Web. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+    </html>

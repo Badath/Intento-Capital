@@ -1,0 +1,91 @@
+/* Elimina márgenes y rellenos predeterminados del html y body */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Establece la fuente y el estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10%; /* Espacio suficiente para el pie de página fijo */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #00008B;
+    color: white;
+    padding: 0.5%;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333;
+    padding: 0.5%;
+    margin: 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 3%;
+    text-decoration: none;
+    font-size: 1.2rem; /* Tamaño de fuente relativo para mejor adaptación */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.2%;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Contenedor para las dos columnas */
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre columnas */
+    padding: 1%;
+    margin: 1%;
+    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
+}
+
+/* Estilos para las columnas */
+.column {
+    flex: 1; /* Ambas columnas ocupan el mismo espacio */
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid #ccc;
+}
+
+/* Colores de fondo diferenciados para las columnas */
+.column-1 {
+    background-color: #f0f0f0;
+}
+
+.column-2 {
+    background-color: #f0f0f0;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Las columnas se apilan una sobre la otra en pantallas pequeñas */
+    }
+    nav a {
+        margin: 0 5%;
+    }
+    header, footer {
+        padding: 1%;
+    }
+}
